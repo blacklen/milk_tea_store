@@ -12,35 +12,35 @@ import Product from './Product.vue';
 export default {
 	name: "Products",
 	components: {
-		Product
+		Product,
 	},
-	props: ["products"]
+	props: ["products"],
 }
 </script>
 
 <style scoped>
-    .products{
-        margin-top: 3em;
-        display: flex;
-        column-gap: 2.5em;
-        flex-wrap: wrap;
-    }
+.products {
+  margin-top: 3em;
+  display: flex;
+  column-gap: 2.5em;
+  flex-wrap: wrap;
+}
 
-    .card{
-        width: 29%;
-        color: #030933e8;
-        margin-bottom: 2em;
-    }
+.card {
+  width: 29%;
+  color: #030933e8;
+  margin-bottom: 2em;
+}
 
-    @media only screen and (max-width: 768px) {
-      .card{
-          width: 45%;
-      }
-    }
-    @media only screen and (max-width: 360px) {
-        .card{
-            width: 100%;
-        }
-    }
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .card {
+    width: 100%;
+  }
+}
 </style>
 
